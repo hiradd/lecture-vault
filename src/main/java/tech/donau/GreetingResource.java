@@ -17,7 +17,8 @@ public class GreetingResource {
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
 
-
+            System.out.println("new changes");
         return engine.readSecret("myapps/quarkus/config").get("adminpass");
+
     }
 }
